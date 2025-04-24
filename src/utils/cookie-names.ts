@@ -1,5 +1,5 @@
 enum CookieNames {
-  AUTH_TOKEN = 'auth_token',
+	AUTH_TOKEN = "auth_token",
 }
 
-export default CookieNames
+export default CookieNames;

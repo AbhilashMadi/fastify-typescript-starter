@@ -1,43 +1,7 @@
 {
-  // Enable ESLint support in VS Code
-  "eslint.enable": true,
-  "eslint.run": "onType", // Lint while typing (can also use "onSave")
-  "eslint.alwaysShowStatus": true,
-  // Automatically fix problems on save using ESLint
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "always"
-  },
-  // Format the document on save using Prettier
-  "editor.formatOnSave": true,
-  // Check ESLint rules for JavaScript, TypeScript, React, etc.
-  "eslint.validate": [
-    "javascript",
-    "javascriptreact",
-    "typescript",
-    "typescriptreact"
-  ],
-  // Use Prettier as the default formatter (this ensures Prettier handles formatting)
-  "editor.defaultFormatter": "esbenp.prettier-vscode",
-  // Ensure ESLint works with the right config
-  "eslint.options": {
-    "configFile": "../eslint.config.js" // Adjust the path to your ESLint config file
-  },
-  // Point Prettier to the local configuration file
-  "prettier.configPath": "../prettier.config.js",
-  // Ensure the workspace TypeScript version is used
-  "typescript.tsdk": "node_modules/typescript/lib",
-  // Automatically reload the VSCode window when ESLint configuration changes
-  "eslint.useGlobalEslint": false, // Ensures workspace-based ESLint config is used
-  // Optionally add a little bit of performance improvement
-  "eslint.quiet": false,
-  // Prettier-specific settings
-  "prettier.requireConfig": true, // Ensures Prettier only runs if there's a configuration file
-  // Enable all Prettier settings
-  "prettier.singleQuote": true, // Use single quotes instead of double quotes
-  "prettier.trailingComma": "all", // Adds trailing commas where valid in ES5 (objects, arrays, etc.)
-  "prettier.printWidth": 80, // Set the maximum line length
-  "prettier.tabWidth": 2, // Indentation size (in spaces)
-  "prettier.useTabs": false, // Use spaces instead of tabs for indentation
-  "prettier.semi": true, // Add semicolons at the end of statements
-  "prettier.arrowParens": "always" // Always include parentheses around arrow function arguments
+	"editor.defaultFormatter": "biomejs.biome",
+	"editor.codeActionsOnSave": {
+		"source.fixAll.biome": "explicit",
+		"source.organizeImports.biome": "explicit"
+	}
 }

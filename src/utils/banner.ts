@@ -1,8 +1,8 @@
-import type { EnvConfig } from '@/config/env-config.js'
-import pkg from '@root/package.json' with { type: 'json' }
+import type { EnvConfig } from "@/config/env-config.js";
+import pkg from "@root/package.json" with { type: "json" };
 
 export default function banner(envConfig: EnvConfig) {
-  console.log(`\x1b[35m
+	console.log(`\x1b[35m
 ╔════════════════════════════════════════════════════════════════╗
 ║ 🚀  Fastify TypeScript Starter Template                        ║
 ╚════════════════════════════════════════════════════════════════╝
@@ -14,5 +14,5 @@ export default function banner(envConfig: EnvConfig) {
 
 🔧 Tech Stack     : Fastify ⚡ TypeScript ❤️ Zod 📝 Mongoose 🫴🏻 Socket.IO
 ✨ Ready to build something awesome!
-\x1b[0m`)
+\x1b[0m`);
 }
