@@ -11,7 +11,7 @@ and more.
 - Auth with JOSE
 - Real-time via Socket.IO
 - Modular plugin architecture
-- ESLint + Prettier configured
+- Biome + Lefthook configured
 
 ## Getting Started
 
